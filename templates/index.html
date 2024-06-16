@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-image: url('https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?size=626&ext=jpg');
+                background-size: cover;
+                background-position: center;
+                color: #c7ecee;
+            }
+
+            .text-container {
+                color: black;
+                border: 2px solid cornflowerblue; /* Khung chữ bao quanh */
+                padding: 20px;
+                text-align: center;
+            }
+
+            .image-container {
+                text-align: center;
+            }
+
+            img {
+                max-width: 200%; /* Ảnh sẽ vừa với chiều ngang của màn hình */
+                max-height: 80vh; /* Tỉ lệ màn hình */
+            }
+        </style>
+    </head>
+    <body>
+    <div class="text-container">
+        <p>Веб-сайт все еще находится в разработке.... если вы являетесь администратором, перейдите на страницу /admin, на странице администратора можно создавать учетные записи для студентов и преподавателей.</p>
+    </div>
+    <div class="image-container">
+        <img src="https://mpei.ru/Slides/%D0%9D%D0%93.png" alt="Mô tả ảnh">
+    </div>
+    </body>
+</div>
+
+{% endblock %}
